@@ -7,7 +7,8 @@ def image_to_numpy(image_path, label):
     return np.array(image), label
 
 
-h = '/home/nathan/PycharmProjects/AI_less/Stamp/'
+h = 'C:/Users/user/PycharmProjects/AI_Stamp_1'
+
 image_paths_and_labels = []
 #
 for i in range(1, 13):
@@ -20,3 +21,4 @@ for image_path, label in image_paths_and_labels:
     labels.append(label)
 
 np.savez('images.npz', images=images_numpy, labels=labels)
+
